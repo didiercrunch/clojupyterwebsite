@@ -1,10 +1,9 @@
 page:
 	rm -rf docs
 	mkdir docs
-	lein cljsbuild once
+	lein uberjar
 	cp -r target/cljsbuild/public/js docs
-	lein sass4clj once
 	cp -r resources/public/css docs
 	cp -r resources/public/images docs
-	lein run static > docs/index.html
+	java -jar target/website.jar static > docs/index.html
 
