@@ -1,18 +1,10 @@
 (ns website.core
     (:require [reagent.core :as reagent :refer [atom]]
               [secretary.core :as secretary :include-macros true]
-              [accountant.core :as accountant]))
+              [accountant.core :as accountant]
+              [website.tobbar :refer [topbar]]
+              [website.home :refer [home-page]]))
 
-;; -------------------------
-;; Views
-
-(defn home-page []
-  [:div [:h2 "Welcome to website"]
-   [:div [:a {:href "/about"} "go to about page"]]])
-
-(defn about-page []
-  [:div [:h2 "About website"]
-   [:div [:a {:href "/"} "go to the home page"]]])
 
 ;; -------------------------
 ;; Routes
@@ -20,13 +12,16 @@
 (defonce page (atom #'home-page))
 
 (defn current-page []
-  [:div [@page]])
+  [:div
+   [topbar]
+   [:div.columns
+    [:div.column.is-offset-1.is-10
+     [:br]
+     [@page]]]])
 
 (secretary/defroute "/" []
   (reset! page #'home-page))
 
-(secretary/defroute "/about" []
-  (reset! page #'about-page))
 
 ;; -------------------------
 ;; Initialize app
