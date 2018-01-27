@@ -5,13 +5,6 @@
             [website.middleware :refer [wrap-middleware]]
             [config.core :refer [env]]))
 
-(def mount-target
-  [:div#app
-      [:h3 "ClojureScript has not been compiled!"]
-      [:p "please run "
-       [:b "lein figwheel"]
-       " in order to start the compiler"]])
-
 (defn head []
   [:head
    [:title "Clojupyter"]
@@ -25,7 +18,7 @@
   (html5
     (head)
     [:body {:class "body-container"}
-     mount-target
+     [:div#app]
      (include-js "/js/app.js")]))
 
 
