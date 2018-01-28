@@ -7,13 +7,10 @@
 
 
 (defn topbar []
-  [:div
    [:nav.navbar.is-primary.is-transparent {:role "navigation" :aria-label "main navigation"}
     [:div.navbar-brand
      [:a.navbar-item
-      [logo 30]
-      [:span.title {:style {:margin-left "0.5em"}} "clojupyter"]]]
-    [:div.navbar-end
-     [:a.navbar-item
-      [:span github-link]]]]])
-
+      [logo 30]]]
+    [:div.navbar-menu
+     [:div.navbar-end
+      [:a.navbar-item github-link]]]])

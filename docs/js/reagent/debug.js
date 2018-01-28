@@ -13,48 +13,48 @@ if(typeof reagent.debug.track_console !== 'undefined'){
 reagent.debug.track_console = (function (){var o = ({});
 o.warn = ((function (o){
 return (function() { 
-var G__14485__delegate = function (args){
+var G__14487__delegate = function (args){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$variadic(reagent.debug.warnings,cljs.core.update_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$warn], null),cljs.core.conj,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,args)], 0));
 };
-var G__14485 = function (var_args){
+var G__14487 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__14486__i = 0, G__14486__a = new Array(arguments.length -  0);
-while (G__14486__i < G__14486__a.length) {G__14486__a[G__14486__i] = arguments[G__14486__i + 0]; ++G__14486__i;}
-  args = new cljs.core.IndexedSeq(G__14486__a,0,null);
+var G__14488__i = 0, G__14488__a = new Array(arguments.length -  0);
+while (G__14488__i < G__14488__a.length) {G__14488__a[G__14488__i] = arguments[G__14488__i + 0]; ++G__14488__i;}
+  args = new cljs.core.IndexedSeq(G__14488__a,0,null);
 } 
-return G__14485__delegate.call(this,args);};
-G__14485.cljs$lang$maxFixedArity = 0;
-G__14485.cljs$lang$applyTo = (function (arglist__14487){
-var args = cljs.core.seq(arglist__14487);
-return G__14485__delegate(args);
+return G__14487__delegate.call(this,args);};
+G__14487.cljs$lang$maxFixedArity = 0;
+G__14487.cljs$lang$applyTo = (function (arglist__14489){
+var args = cljs.core.seq(arglist__14489);
+return G__14487__delegate(args);
 });
-G__14485.cljs$core$IFn$_invoke$arity$variadic = G__14485__delegate;
-return G__14485;
+G__14487.cljs$core$IFn$_invoke$arity$variadic = G__14487__delegate;
+return G__14487;
 })()
 ;})(o))
 ;
 
 o.error = ((function (o){
 return (function() { 
-var G__14488__delegate = function (args){
+var G__14490__delegate = function (args){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$variadic(reagent.debug.warnings,cljs.core.update_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$error], null),cljs.core.conj,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,args)], 0));
 };
-var G__14488 = function (var_args){
+var G__14490 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__14489__i = 0, G__14489__a = new Array(arguments.length -  0);
-while (G__14489__i < G__14489__a.length) {G__14489__a[G__14489__i] = arguments[G__14489__i + 0]; ++G__14489__i;}
-  args = new cljs.core.IndexedSeq(G__14489__a,0,null);
+var G__14491__i = 0, G__14491__a = new Array(arguments.length -  0);
+while (G__14491__i < G__14491__a.length) {G__14491__a[G__14491__i] = arguments[G__14491__i + 0]; ++G__14491__i;}
+  args = new cljs.core.IndexedSeq(G__14491__a,0,null);
 } 
-return G__14488__delegate.call(this,args);};
-G__14488.cljs$lang$maxFixedArity = 0;
-G__14488.cljs$lang$applyTo = (function (arglist__14490){
-var args = cljs.core.seq(arglist__14490);
-return G__14488__delegate(args);
+return G__14490__delegate.call(this,args);};
+G__14490.cljs$lang$maxFixedArity = 0;
+G__14490.cljs$lang$applyTo = (function (arglist__14492){
+var args = cljs.core.seq(arglist__14492);
+return G__14490__delegate(args);
 });
-G__14488.cljs$core$IFn$_invoke$arity$variadic = G__14488__delegate;
-return G__14488;
+G__14490.cljs$core$IFn$_invoke$arity$variadic = G__14490__delegate;
+return G__14490;
 })()
 ;})(o))
 ;
