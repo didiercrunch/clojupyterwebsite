@@ -2,6 +2,11 @@
 @import "../../resources/node_modules/bulma/sass/utilities/initial-variables";
 @import "../../resources/node_modules/bulma/sass/utilities/functions";
 
+$logo-orange: #f37726ff;
+
+.cj-orange-text{
+  color: $logo-orange;
+}
 
 // 6. Import the rest of Bulma
 @import "../../resources/node_modules/bulma/bulma";
