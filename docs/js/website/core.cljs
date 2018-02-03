@@ -3,7 +3,9 @@
               [secretary.core :as secretary :include-macros true]
               [accountant.core :as accountant]
               [website.tobbar :refer [topbar]]
-              [website.home :refer [home-page]]))
+              [website.home :refer [home-page]]
+              [website.install :refer [install-page]]
+              [website.charting :refer [charting-page]]))
 
 
 ;; -------------------------
@@ -22,6 +24,11 @@
 (secretary/defroute "/" []
   (reset! page #'home-page))
 
+(secretary/defroute "/charting" []
+  (reset! page #'charting-page))
+
+(secretary/defroute "/install" []
+  (reset! page #'install-page))
 
 ;; -------------------------
 ;; Initialize app
